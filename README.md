@@ -28,3 +28,9 @@ Full automation tests for PANGO
 * Had to implement DataFromSQL class to initialize user table. Also add, update and delete user records and cleanup user table after all operations done.
 
 # Execution
+
+### With maven installed
+* Run mvn test
+
+### With intellij
+* Run testng.xml file directly
