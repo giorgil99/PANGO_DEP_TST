@@ -19,13 +19,5 @@ jobs:
         java-version: '21'
         distribution: 'temurin'
         cache: maven
-    - name: Install Chrome
-      run: browser-actions/setup-chrome@v2
-      with:
-        chrome-version: 'latest'
-    - name: Install ChromeDriver
-      run: browser-actions/setup-chromedriver@v2
-      with:
-        chromedriver-version: 'latest'
-    - name: Run maven test
-      run: mvn test
+    - name: Run testng test
+      run: mvn test -DsuiteXmlFile=testng.xml
