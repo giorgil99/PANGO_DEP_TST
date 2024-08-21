@@ -1,0 +1,7 @@
+
+l	java:S116"PRename this field "Email" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Æÿó²8ÿí°—2
+p	java:S116"TRename this field "Telephone" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(âÕÅÁ8ÿí°—2
+t	java:S116"SRename this field "Password" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ØÜ¥¼üÿÿÿÿ8ÿí°—2
+r	java:S116"QRename this field "Submit" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(íœËüÿÿÿÿ8ÿí°—2
+b
+java:S1659"EDeclare "lastName" and all following declarations on a separate line.(š£‹ï8ÿí°—2

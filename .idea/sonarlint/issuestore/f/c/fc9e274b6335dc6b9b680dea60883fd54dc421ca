@@ -1,0 +1,5 @@
+
+q	java:S116"URename this field "first_name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŠÐÆ“8ç‰è²—2
+p	java:S116"TRename this field "last_name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŠÐÆ“8ç‰è²—2
+_
+java:S1659"BDeclare "email" and all following declarations on a separate line.(ŠÐÆ“8è‰è²—2
