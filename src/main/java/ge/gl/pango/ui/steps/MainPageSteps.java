@@ -5,12 +5,12 @@ import ge.gl.pango.ui.elements.MainPageElements;
 
 public class MainPageSteps extends MainPageElements {
 
-    public MainPageSteps clickOnMyAccountButton(){
+    public MainPageSteps clickOnMyAccountButton() {
         getMayAccountButton().should(Condition.visible).click();
         return this;
     }
 
-   public MainPageSteps clickOnRegisterButton(){
+    public MainPageSteps clickOnRegisterButton() {
         getRegisterButton().should(Condition.visible).click();
         return this;
     }

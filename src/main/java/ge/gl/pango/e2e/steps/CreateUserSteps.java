@@ -19,7 +19,7 @@ public class CreateUserSteps {
 
 
     public CreateUserSteps createUser(CreateUserRequest createUserRequest) {
-        var objectMapper = new ObjectMapper();
+        ObjectMapper objectMapper = new ObjectMapper();
         this.validations = new ArrayList<>();
         RestAssured.baseURI = "https://reqres.in/api/users";
         String createUserRequestLiteral;

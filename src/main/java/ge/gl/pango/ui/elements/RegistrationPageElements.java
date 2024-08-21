@@ -20,7 +20,7 @@ public class RegistrationPageElements {
             newsletter = $(By.xpath("//input[@type=\"radio\" and @name=\"newsletter\" and @value=\"1\"]")),
             privacyPolicy = $(By.xpath("//input[@type=\"checkbox\" and @name=\"agree\" and @value=\"1\"]")),
             Submit = $(By.xpath("//input[@type=\"submit\" and @class=\"btn btn-primary\" and @value=\"Continue\"]")),
-            successValidationMessage=$x("//h1[text()='Your Account Has Been Created!']");
+            successValidationMessage = $x("//h1[text()='Your Account Has Been Created!']");
 
 
 }

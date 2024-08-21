@@ -22,4 +22,9 @@ Full automation tests for PANGO
 
 ### Database Connection
 
-* 
+* Tests are in ge.gl.pango.db directory
+* In order to run this project independently I had to include H2 in-memory database.
+* DBTest class runs 3 tests : addUserDBTest, updateDBTest, deleteUserDBTest with validations provided in each;
+* Had to implement DataFromSQL class to initialize user table. Also add, update and delete user records and cleanup user table after all operations done.
+
+# Execution

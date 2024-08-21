@@ -12,7 +12,7 @@ public class E2ETest {
 
     @Test
     public void createUserTest() {
-        var createUserRequest = new CreateUserRequest("gl", "physician");
+        CreateUserRequest createUserRequest = new CreateUserRequest("gl", "physician");
         CreateUserSteps createUser = new CreateUserSteps();
         createUser.createUser(createUserRequest)
                 .assertName(createUserRequest.getName())
@@ -24,7 +24,7 @@ public class E2ETest {
 
     @Test
     public void updateUserTest() {
-        var updateUserRequest = new UpdateUserRequest("gl", "qa automation testing engineer");
+        UpdateUserRequest updateUserRequest = new UpdateUserRequest("gl", "qa automation testing engineer");
         UpdateUserSteps updateUser = new UpdateUserSteps();
         updateUser.updateUser(updateUserRequest)
                 .assertName(updateUserRequest.getName())
@@ -39,6 +39,5 @@ public class E2ETest {
         updateUser.getUser()
                 .assertData()
                 .displayReport();
-
     }
 }

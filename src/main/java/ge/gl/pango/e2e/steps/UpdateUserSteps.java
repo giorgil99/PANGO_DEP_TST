@@ -18,7 +18,7 @@ public class UpdateUserSteps {
     private List<String> validations;
 
     public UpdateUserSteps updateUser(UpdateUserRequest updateUserRequest) {
-        var objectMapper = new ObjectMapper();
+        ObjectMapper objectMapper = new ObjectMapper();
         validations = new ArrayList<>();
         RestAssured.baseURI = "https://reqres.in/api/users/2";
         String createUserRequestLiteral;

@@ -12,7 +12,7 @@ public class SelenideConfig {
         Configuration.browser = "Chrome";
         Configuration.timeout = 100000;
         Configuration.pageLoadTimeout = 100000;
-        Configuration.proxyEnabled=false;
+        Configuration.proxyEnabled = false;
         Configuration.holdBrowserOpen = false;
         Configuration.reopenBrowserOnFail = true;
         Path root = Paths.get(".").normalize().toAbsolutePath();

@@ -14,17 +14,17 @@ public class UITest {
 
     @BeforeTest
     public void startBrowser() {
-        var connection = new GetWebConnection();
+        GetWebConnection connection = new GetWebConnection();
         connection.ConnectToPage();
     }
 
 
-    @Test(priority = 0,description = "opening registration page")
+    @Test(priority = 0, description = "opening registration page")
     public void openRegisterPageTest() {
-        var mainPageSteps = new MainPageSteps();
+        MainPageSteps mainPageSteps = new MainPageSteps();
         mainPageSteps.clickOnMyAccountButton()
                 .clickOnRegisterButton();
-        var regPageSteps = new RegistrationPageSteps();
+        RegistrationPageSteps regPageSteps = new RegistrationPageSteps();
 
         regPageSteps.getPrivacyPolicy().shouldBe(Condition.visible).shouldNotBe(Condition.disabled);
         regPageSteps.getNewsletter().shouldBe(Condition.visible).shouldNotBe(Condition.disabled);
@@ -32,11 +32,11 @@ public class UITest {
 
     }
 
-    @Test(priority = 1,dependsOnMethods = "openRegisterPageTest",description = "registering new customer")
+    @Test(priority = 1, dependsOnMethods = "openRegisterPageTest", description = "registering new customer")
     public void registerAndLoginTest() {
-        var regPageSteps = new RegistrationPageSteps();
-        var changingMale = "giolemo@gmail.com";
-        var random = new Random();
+        RegistrationPageSteps regPageSteps = new RegistrationPageSteps();
+        String changingMale = "giolemo@gmail.com";
+        Random random = new Random();
         changingMale = random.nextInt(5000, 9000) + changingMale;
         regPageSteps.SetName("gio")
                 .setLastName("lemo")
@@ -47,7 +47,7 @@ public class UITest {
                 .clickOnNewsletter()
                 .clickOnPrivacyPolicy()
                 .clickOnSubmit();
-        var expectedMessage = "Your Account Has Been Created!";
+        String expectedMessage = "Your Account Has Been Created!";
         Assert.assertEquals(regPageSteps.getSuccessValidationMessage().shouldBe(Condition.visible).getText(), expectedMessage);
 
     }
