@@ -34,3 +34,6 @@ Full automation tests for PANGO
 
 ### With intellij
 * Run testng.xml file directly
+
+### Using github built in pipeline
+* Check Actions section
