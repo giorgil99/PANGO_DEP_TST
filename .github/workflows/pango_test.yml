@@ -23,4 +23,4 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Run testng test
-      run: mvn test -Dtest=!UITest
+      run: mvn test
