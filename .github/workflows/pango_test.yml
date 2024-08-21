@@ -20,8 +20,12 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Install Chrome
-      run: |
-        wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-        sudo apt install -y ./google-chrome-stable_current_amd64.deb
+      run: browser-actions/setup-chrome@v2
+      with:
+        chrome-version: 'latest'
+    - name: Install ChromeDriver
+      run: browser-actions/setup-chromedriver@v2
+      with:
+        chromedriver-version: 'latest'
     - name: Run maven test
       run: mvn test
